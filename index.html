@@ -21,35 +21,35 @@
     
     <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" crossorigin src="/event-boost/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/event-boost/assets/index-bb962b8b.css">
+    <link rel="stylesheet" href="/event-boost/assets/index-b79fb967.css">
   </head>
   <body>
 
     <!-- Loads the specified .html file -->
-    <section class="header">
-    <div class="bcg-logo"></div>
-    <a href="#">
-        <picture>
-            <source media="(min-width: 1280px)" srcset=""/>
-            <source media="(min-width: 768px)" srcset=""/>
-            <img srcset="" src="" alt="Logo" class="img__logo" loading="lazy"/>
-        </picture>
-    </a>
-    <div class="container">
-        <h1 class="title">FIND BEST EVENTS<br>
-            AROUND THE WORLD</h1>
-        
-        <div class="form-container">
-          <form class="search-form js-form-keyword" id="search-form">
-              <input type="text" name="query" autocomplete="off" placeholder="Start searching" class="input"/>
-          </form>
+    <header class="header" id="top">
+  <div class="container">
+    <a href="./header.html" class="header__link"
+      ><img src="../img/header/logo-head.png" alt="" class="header__image"
+    /></a>
+    <h1 class="header__title">FIND BEST EVENTS AROUND THE WORLD</h1>
 
-          <select id="selectCountry" class="search-form js-form-country" aria-label="Default select example" >
-          </select>
-        </div>
-    </div>
-</section>
-<div>
+    <form action="" class="header__form">
+      <div class="header__icon">
+        <input
+          type="text"
+          class="header__input"
+          placeholder="Start searching"
+        />
+        <img src="../img/header/search.png" alt="" class="header__icons" />
+      </div>
+      <div class="header__icon">
+        <input type="text" class="header__input" placeholder="Choose country" />
+        <img src="../img/header/downarrow.png" alt="" class="header__icons" />
+      </div>
+    </form>
+  </div>
+</header>
+
     
     
     <div class="backdrop is-hidden">
