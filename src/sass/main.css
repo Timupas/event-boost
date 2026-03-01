@@ -43,4 +43,125 @@ body {
   .container {
     width: 1200px;
   }
+}
+
+.header {
+  background-image: url(../../img/header/header-lg.jpg);
+  background-color: rgb(0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+.header__title {
+  width: 589px;
+  height: 162px;
+  color: #dc56c5;
+  padding-top: 80px;
+  margin-bottom: 65px;
+  text-align: center;
+  margin: auto;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  width: 212px;
+  height: 44px;
+}
+@media screen and (min-width: 786px) {
+  .header__title {
+    font-size: 30px;
+    width: 353px;
+    padding-top: 40px;
+    height: 74px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__title {
+    font-size: 50px;
+    width: 589px;
+    height: 122px;
+  }
+}
+.header__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.header__image {
+  width: 110px;
+}
+@media screen and (min-width: 786px) {
+  .header__image {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__image {
+    width: 240px;
+  }
+}
+.header__form {
+  padding-bottom: 200px;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+@media screen and (min-width: 786px) {
+  .header__form {
+    padding-bottom: 200px;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.header__input {
+  width: 270px;
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 50px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+.header__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.header__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.header__icon {
+  position: relative;
+  width: 270px;
+  margin: auto;
+}
+@media screen and (min-width: 786px) {
+  .header__icon {
+    margin: 0%;
+  }
+}
+.header__icons {
+  position: absolute;
+  top: 14.5px;
+  right: 30px;
+}
+.header__iconss {
+  position: absolute;
+  top: 17px;
+  right: 30px;
 }/*# sourceMappingURL=main.css.map */
