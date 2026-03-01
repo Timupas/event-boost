@@ -1,0 +1,154 @@
+$pink-color: #dc56c5;
+$blue-color: #4c00fe;
+$bg-color: #fff2fd;
+$font-main: 'Montserrat', sans-serif;
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background-color: rgba(32, 13, 29, 0.6);
+  backdrop-filter: blur(2px);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal {
+  position: relative;
+  width: 932px;
+  min-height: 1032px;
+  padding: 60px 70px;
+  background: $bg-color;
+  border-top-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+
+  &__close {
+    position: absolute;
+    right: 30px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: $blue-color;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__avatar-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px; 
+  }
+
+  &__avatar {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 360px 1fr; 
+    gap: 60px;
+    align-items: start;
+  }
+
+  &__left {
+    flex-shrink: 0;
+  }
+
+  &__poster {
+    width: 360px;
+    height: 641px;
+    display: block;
+    object-fit: cover;
+    border-radius: 4px; 
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px; 
+  }
+
+
+  &__info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 20px;
+    color: $pink-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: $font-main;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;
+  }
+
+  &__ticket-btn {
+    width: fit-content;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: $blue-color;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-family: $font-main;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(76, 0, 254, 0.4);
+    }
+
+    &--vip {
+      background: #ff6b08;
+    }
+  }
+
+  &__author-btn {
+    display: block;
+    margin: 40px auto 0;
+    padding: 12px 40px;
+    background: transparent;
+    border: 1px solid $blue-color;
+    color: $blue-color;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: $blue-color;
+      color: #fff;
+    }
+  }
+}
