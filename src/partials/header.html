@@ -1,23 +1,24 @@
 <header class="header" id="top">
-  <div class="container">
-    <a href="./header.html" class="header__link"
-      ><img src="../img/header/logo-head.png" alt="" class="header__image"
-    /></a>
-    <h1 class="header__title">FIND BEST EVENTS AROUND THE WORLD</h1>
+    <div class="container">
+        <a href="./header.html" class="header__link"><img src="../img/header/logo-head.png" alt="" class="header__image"></a>
+        <h1 class="header__title">FIND BEST EVENTS AROUND THE WORLD</h1>
 
-    <form action="" class="header__form">
-      <div class="header__icon">
-        <input
-          type="text"
-          class="header__input"
-          placeholder="Start searching"
-        />
-        <img src="../img/header/search.png" alt="" class="header__icons" />
-      </div>
-      <div class="header__icon">
-        <input type="text" class="header__input" placeholder="Choose country" />
-        <img src="../img/header/downarrow.png" alt="" class="header__icons" />
-      </div>
-    </form>
-  </div>
+
+        <form action="" class="header__form">
+            <div class="header__icon">
+                <input type="text" class="header__input" placeholder="Start searching">
+                <svg class="header__icons-start" width="12" height="12">
+                    <use href="../img/header/search.svg"></use>
+                </svg>
+            </div>
+            <div class="header__icon country">
+                <input type="text" class="header__input" id="countryInput" placeholder="Choose country" readonly />
+                <svg class="header__icons" width="12" height="12">
+                    <use href="../img/header/downarr.svg"></use>
+                </svg>
+                <ul class="country-list"></ul>
+            </div>
+        </form>
+
+    </div>
 </header>
