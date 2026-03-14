@@ -162,6 +162,9 @@ body {
   background: rgba(255, 255, 255, 0.15);
   fill: #ff0dbf;
 }
+.header__input:hover {
+  background: rgba(41, 40, 40, 0.517);
+}
 .header__icon {
   position: relative;
   width: 270px;
@@ -208,12 +211,13 @@ body {
   width: 100%;
   overflow-y: auto;
   overscroll-behavior: contain;
-  background: rgba(146, 146, 146, 0.517);
+  background: rgba(41, 40, 40, 0.517);
+  backdrop-filter: blur(10px);
   padding: 0;
   margin: 0;
   opacity: 0;
   transform: translateY(-10px);
-  border-radius: 35px 35px 35px 35px;
+  border-radius: 0px 0px 15px 15px;
 }
 
 .country-list.open {
@@ -224,15 +228,16 @@ body {
 }
 
 .country-list li {
-  padding: 10px 20px;
+  padding: 5px 10px;
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .country-list li:hover {
   background: rgba(255, 13, 190, 0.3568627451);
+  border-radius: 8px;
 }
 
 .country {
@@ -250,6 +255,11 @@ body {
 
 .country-list::-webkit-scrollbar-track {
   background: transparent;
+}
+
+.country.open .header__input {
+  border-radius: 20px 20px 0 0;
+  background: rgba(41, 40, 40, 0.517);
 }
 
 body {
@@ -491,6 +501,24 @@ body {
 .dots {
   color: #fff;
   padding: 6px;
+}
+
+.footer {
+  padding: 40px 0px;
+}
+
+.footer__text {
+  font-size: 16px;
+  text-align: center;
+  color: #939393;
+}
+@media screen and (min-width: mobile) {
+  .footer__text {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    font-size: 14px;
+  }
 }
 
 .backdrop {
