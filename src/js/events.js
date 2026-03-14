@@ -22,9 +22,6 @@ let totalPages = 0;
 
 let timer;
 
-/* ======================
-Список країн
-====================== */
 
 const countries = [
   { name: "United States", code: "US" },
@@ -65,9 +62,6 @@ function renderCountries() {
 
 renderCountries();
 
-/* ======================
-Dropdown країни
-====================== */
 
 countryInput.addEventListener("click", () => {
   countryBox.classList.toggle("open");
@@ -96,9 +90,7 @@ document.addEventListener("click", e => {
   }
 });
 
-/* ======================
-Пошук
-====================== */
+
 
 searchInput.addEventListener("input", () => {
   clearTimeout(timer);
@@ -109,9 +101,7 @@ searchInput.addEventListener("input", () => {
   }, 500);
 });
 
-/* ======================
-Завантаження подій
-====================== */
+
 
 async function loadEvents(page = 0) {
 
@@ -135,9 +125,6 @@ async function loadEvents(page = 0) {
   renderPagination();
 }
 
-/* ======================
-Немає результатів
-====================== */
 
 
 function renderNoMatches() {
@@ -151,9 +138,6 @@ function renderNoMatches() {
 }
 
 
-/* ======================
-Відтворення подій
-====================== */
 
 function renderEvents(events) {
   list.classList.remove('no-events');
@@ -193,7 +177,7 @@ function renderEvents(events) {
       const lng = placeEl.dataset.lng;
       const name = placeEl.dataset.place;
 
-      modalWrap.innerHTML = ""; // очищаємо модалку
+      modalWrap.innerHTML = ""; 
       modal.classList.remove('is-hidden');
       body.style.overflow = 'hidden';
 
@@ -219,9 +203,7 @@ function renderEvents(events) {
   });
 }
 
-/* ======================
-Пагінація
-====================== */
+
 
 function renderPagination() {
 
@@ -251,8 +233,5 @@ function renderPagination() {
   }
 }
 
-/* ======================
-Запуск
-====================== */
 
 loadEvents();
