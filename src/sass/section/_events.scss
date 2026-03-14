@@ -1,3 +1,9 @@
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../../img/header/bg-body.png);
+}
+
 .events-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -173,9 +179,6 @@
   height: 10px;
   flex-shrink: 0;           
 }
-
-
-
 
 
 .zero-matches {
